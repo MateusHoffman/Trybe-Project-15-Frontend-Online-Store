@@ -50,6 +50,7 @@ class App extends React.Component {
     this.setState({ categoriaId: value }, async () => {
       const { categoriaId } = this.state;
       const listaProdutos = await api.getProductsFromCategoryAndQuery(categoriaId);
+      console.log(listaProdutos.results);
       this.setState({ productList: listaProdutos.results, filtrar: true });
     });
   }
@@ -122,11 +123,6 @@ class App extends React.Component {
         <BrowserRouter>
           <header className="app-header">
             <h2><Link to="/">Hoffman Store</Link></h2>
-            {/* <nav className="app-header-nav">
-              <Link to="/">Início</Link>
-              <hr />
-              <Link to="/shopping-cart">Carrinho</Link>
-            </nav> */}
             <div>
               <button
                 type="button"

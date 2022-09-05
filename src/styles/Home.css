@@ -11,9 +11,6 @@
   flex-direction: column;
   height: 80vh;
   line-height: 30px;
-
-  /* Aplicação da propriedade overflow apenas na vertical proveniente do StackOverFlow
-  (link: https://stackoverflow.com/questions/19256982/horizontal-scroll-css) */
   overflow-x: hidden;
   overflow-y: scroll;
   width: 20%;

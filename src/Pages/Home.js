@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import ShopButton from '../components/ShopButton';
 import CardItem from '../components/CardItem';
-// import Slider from '../components/Slider';
+import initialProduct from '../services/initialProduct'
 import '../styles/Home.css';
 
 class Home extends Component {
@@ -22,7 +22,6 @@ class Home extends Component {
   }
 
   render() {
-    // const { hidden } = this.state;
     const {
       categoriaList,
       productList,
@@ -73,7 +72,7 @@ class Home extends Component {
             </div>
             <ShopButton favorites={ favorites } />
           </div>
-          { filtrar && (
+          { (filtrar && productList.length < 1) && <h3>Nenhum produto foi encontrado</h3>}
             <div className="home-container-product-list">
               {
                 productList.length > 0 ? (
@@ -87,24 +86,19 @@ class Home extends Component {
                     ))}
                   </div>
                 ) : (
-                  <h3>Nenhum produto foi encontrado</h3>
+                  <div className="home-product-list">
+                  { initialProduct.map((produto) => (
+                    <CardItem
+                      key={ produto.id }
+                      handleFavorites={ handleFavorites }
+                      object={ produto }
+                    />
+                  ))}
+                </div>
                 )
               }
             </div>
-          ) }
         </div>
-        {/* <div>
-          <button type="button" onClick={ this.changeHidden } className="reset-button">
-            <span className="material-symbols-outlined">
-              menu_open
-            </span>
-          </button>
-          <Slider
-            favorites={ favorites }
-            hidden={ hidden }
-            changeHidden={ this.changeHidden }
-          />
-        </div> */}
       </div>
     );
   }

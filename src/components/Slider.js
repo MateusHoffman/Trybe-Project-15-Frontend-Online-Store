@@ -12,7 +12,6 @@ class Slider extends React.Component {
     return (
       <div className={ JSON.stringify(hidden) }>
         <div className="slider-header-content">
-          {/* <h2 className="slider-title">Carrinho de compras </h2> */}
           <button type="button" onClick={ changeHidden }>
             <span className="material-symbols-outlined">
               close

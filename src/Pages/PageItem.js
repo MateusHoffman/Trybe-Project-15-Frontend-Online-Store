@@ -29,7 +29,6 @@ class PageItem extends React.Component {
   }
 
   getProductFromAPI = async () => {
-    // Baseada na resolução no exercício do Guilherme Fernandes (link: https://github.com/guilherme-ac-fernandes/trybe-exercicios/blob/main/02-front-end/bloco-12-ciclo-de-vida-de-componentes-e-react-router/dia-01-ciclo-de-vida-de-componentes/exercise-01/src/App.js)
     const { match: { params: { id } } } = this.props;
     const product = await api.getProductsFromId(id);
     this.setState({ product, render: true });
