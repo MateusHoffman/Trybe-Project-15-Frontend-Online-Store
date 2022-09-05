@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.App {
+  text-align: center;
+}
+
+h2 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #080808;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+h2 span {
+  display: block;
+  font-size: 0.5em;
+  line-height: 1.3;
+}
+h2 em {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.app-header {
+  background-color: #fcf362;
+  /* color: white; */
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
+  height: 5rem;
+  justify-content: space-between;
+  border-bottom: 1px solid #e2da58;
+  padding: 0 4rem;
+}
+
+.app-header > h2 {
+  font-weight: 900;
+  text-shadow: 1px 1px 2px black
+}
+
+.app-header > h2 > a {
+  text-decoration: none;
+  color: white;
+}

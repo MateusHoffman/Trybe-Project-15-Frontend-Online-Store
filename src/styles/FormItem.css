@@ -1,0 +1,47 @@
+.form-item-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 50%;
+}
+
+.form-item-input-email {
+  border: solid 1px #e1e5eb;
+  margin: 5px;
+  outline: none;
+  padding: 8px 16px;
+  width: 70%;
+}
+
+.form-item-fieldset {
+  border: solid 1px #e1e5eb;
+  padding: 10px 30px;
+  width: 70%;
+}
+
+.form-item-input-radio {
+  margin: 0 10px;
+}
+
+.form-item-input-textarea {
+  border: solid 1px #e1e5eb;
+  height: 60px;
+  margin: 20px;
+  outline: none;
+  padding: 8px 16px;
+  resize: none;
+  width: 70%;
+}
+
+.form-item-input-button {
+  background-color: green;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+  margin: 5px;
+  padding: 8px 32px;
+  width: 25%;
+}

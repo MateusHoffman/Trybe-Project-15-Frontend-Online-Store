@@ -1,0 +1,111 @@
+.home-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.home-nav-content {
+  border: 1px solid #181725;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  line-height: 30px;
+
+  /* Aplicação da propriedade overflow apenas na vertical proveniente do StackOverFlow
+  (link: https://stackoverflow.com/questions/19256982/horizontal-scroll-css) */
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 20%;
+}
+
+.label-nav-content {
+  border: 0.5px solid rgb(230, 230, 209);
+  cursor: pointer;
+}
+
+.label-nav-content:hover {
+  background-color: hsl(120, 34%, 67%);
+}
+
+.home-initial-message {
+  margin-left: 45px;
+  text-align: left;
+}
+
+.home-input-category {
+  display: none;
+  margin: 0 10px;
+}
+
+.home-content {
+  width: 75%;
+}
+
+.home-header-content {
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  justify-content: center;
+  width: 100%;
+}
+
+.home-input-content {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.home-input-text {
+  border: solid 1px #000000;
+  margin: 5px;
+  outline: none;
+  padding: 8px 16px;
+  width: 70%;
+  border-radius: 5px;
+}
+
+.home-input-text:focus {
+  border: 1px solid rgb(0, 81, 255);
+}
+
+.home-input-button {
+  background-color: green;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+  margin: 5px;
+  padding: 8px 32px;
+  width: 25%;
+}
+
+.home-input-button:hover {
+  background-color: rgb(20, 148, 20);
+}
+
+.home-container-product-list {
+  margin-top: 20px;
+}
+
+.home-product-list {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+.reset-button {
+  background: transparent;
+  border: none;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  width: auto;
+}

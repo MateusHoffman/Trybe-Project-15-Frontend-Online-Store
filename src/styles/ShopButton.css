@@ -1,0 +1,23 @@
+.shop-button-container {
+  display: flex;
+  justify-content: center;
+  width: 15%;
+}
+
+.shop-button {
+  height: 20px;
+  margin-right: 5px;
+  text-decoration: none;
+  width: 22px;
+}
+
+.shopping-cart-size {
+  align-items: center;
+  background-color: yellowgreen;
+  border-radius: 50%;
+  display: flex;
+  font-size: 12px;
+  height: 18px;
+  justify-content: center;
+  width: 18px;
+}

@@ -1,0 +1,78 @@
+.checkout-products-container {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  justify-content: center;
+  padding-block: 20px;
+  width: 100%;
+}
+
+.checkout-product {
+  align-items: center;
+  display: flex;
+  padding-block: 20px;
+  width: 80%;
+}
+
+.checkout-product img {
+  border-radius: 50%;
+  margin-left: 30px;
+  width: 8%;
+}
+
+.checkout-product p {
+  display: inline-block;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.checkout-total-price {
+  padding-block: 20px;
+}
+
+.checkout-forms-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.checkout-forms-container .input {
+  border: solid 1px #e1e5eb;
+  margin: 5px;
+  min-width: 45%;
+  outline: none;
+  padding: 8px 16px;
+}
+
+.checkout-forms-fieldset {
+  align-items: center;
+  border: solid 1px #e1e5eb;
+  display: flex;
+  gap: 25%;
+  justify-content: center;
+  margin-top: 20px;
+  min-width: 40%;
+  padding-block: 20px;
+}
+
+.checkout-forms-fieldset label input {
+  margin-left: 10px;
+}
+
+.checkout-button {
+  background-color: green;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  padding: 8px 32px;
+  width: 25%;
+}
+
