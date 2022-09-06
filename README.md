@@ -3,7 +3,7 @@
 Project responsible for presenting my skills with React, JavaScript, LocalStorage, React Router, HTML and CSS
 
 ## Access the project:
-### trybe-project-15-frontend-online-store.vercel.app
+### https://trybe-project-15-frontend-online-store.vercel.app/
 
 ## NOTA - 100%
 
